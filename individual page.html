@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandala Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .mandala-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .mandala-image img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            margin-bottom: 30px;
+        }
+
+        .share-buttons {
+            margin-bottom: 20px;
+        }
+
+        .share-buttons a {
+            display: inline-block;
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .related-mandalas {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .related-thumbnail {
+            flex: 1 0 24%;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        .related-thumbnail img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .related-thumbnail:hover img {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mandala Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="mandala-container">
+        <div class="mandala-image">
+            <img src="mandala1.jpg" alt="Mandala 1">
+        </div>
+
+        <div class="description">
+            <h2>Mandala Name</h2>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis mauris vel euismod
+                tristique. Curabitur euismod tincidunt metus, a ultricies lectus ultricies at. Suspendisse potenti.
+                Vivamus vel ligula vitae felis fermentum varius. Sed vitae congue odio, nec venenatis dui.</p>
+        </div>
+
+        <div class="share-buttons">
+            <a href="#" target="_blank">Share on Facebook</a>
+            <a href="#" target="_blank">Tweet</a>
+            <a href="#" target="_blank">Pin it</a>
+        </div>
+
+        <h2>Related Mandalas</h2>
+        <div class="related-mandalas">
+            <div class="related-thumbnail">
+                <img src="mandala2.jpg" alt="Mandala 2">
+            </div>
+            <div class="related-thumbnail">
+                <img src="mandala3.jpg" alt="Mandala 3">
+            </div>
+            <!-- Add more related mandalas as needed -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Mandala Gallery. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

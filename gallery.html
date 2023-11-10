@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandala Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .category-filter {
+            margin-bottom: 20px;
+        }
+
+        .category-filter select {
+            padding: 10px;
+        }
+
+        .thumbnails {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .thumbnail {
+            flex: 1 0 24%;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .thumbnail:hover img {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mandala Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="gallery-container">
+        <div class="category-filter">
+            <label for="category">Filter by Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="traditional">Traditional</option>
+                <option value="modern">Modern</option>
+                <option value="floral">Floral</option>
+                <option value="geometric">Geometric</option>
+            </select>
+        </div>
+
+        <div class="thumbnails">
+            <div class="thumbnail">
+                <img src="mandala1.jpg" alt="Mandala 1">
+            </div>
+            <div class="thumbnail">
+                <img src="mandala2.jpg" alt="Mandala 2">
+            </div>
+            <!-- Add more thumbnails as needed -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Mandala Gallery. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
